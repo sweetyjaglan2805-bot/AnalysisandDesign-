@@ -1,21 +1,15 @@
-# Analysis and Design
+This repository contains performance analysis of different algorithms in C++.
 
-This repository contains programs and performance analysis for algorithms implemented in C++.
+Each experiment includes:
+- Random input generation
+- Execution time measurement
+- Table + CSV output
+- Graph using Python
 
-## Description
-The project demonstrates algorithm analysis using recursion, random input generation, execution time measurement, and data visualization using Python.
+## Experiments
 
-## Files
-- recursive_sum.cpp
-- sum_table.txt
-- sum_csv.txt
-- plot_sum.py
-- sum_graph.png
+### 1. Recursive Sum
+Folder: `Recursive_Sum/`
 
-## How to Run
-1. Compile the C++ program.
-2. Run the program to generate output files.
-3. Run the Python script to generate the graph.
-
-## Output
-The output includes a table of results and a graph showing execution time versus input size.
+### 2. Ball Number of Tips
+Folder: `Ball_No_Of_Tips/`
