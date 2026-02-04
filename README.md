@@ -10,6 +10,9 @@ Folder: `Sumofarray/`
 ### 2. Ball Number of Tips
 Folder: `BallNooftips/`
 
+### 3. Truth table
+Folder: `truth_table`
+
 Each folder contains:
 - C++ code
 - Table output
