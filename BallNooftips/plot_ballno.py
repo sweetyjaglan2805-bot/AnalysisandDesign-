@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 data = pd.read_csv("ball_csv.txt")
-
+data = data.sort_values("Velocity")
 x = data["Velocity"]
 y = data["Time"]
 
