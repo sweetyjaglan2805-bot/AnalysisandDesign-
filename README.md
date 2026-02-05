@@ -13,6 +13,9 @@ Folder: `BallNooftips/`
 ### 3. Truth table
 Folder: `truth_table`
 
+### 4. Tower of Hanoi
+Folder: `towerofhanoi`
+
 Each folder contains:
 - C++ code
 - Table output
