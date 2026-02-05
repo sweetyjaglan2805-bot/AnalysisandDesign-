@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 data = pd.read_csv("truth_csv.txt")
-
+data = data.sort_values(by="Input")
 x = data["Input"]
 y = data["Time"]
 
