@@ -28,20 +28,21 @@ This is because the number of moves required is:
 
 ## Files
 
-towerofhanoi.cpp
+`towerofhanoi.cpp`
 C++ program for simulation and performance measurement.
 
-towerofhanoi.txt
+`towerofhanoi.txt`
 Table formatted output for easy human reading.
 
-towerofhanoi.csv
+`towerofhanoi.csv`
 CSV formatted output used for plotting the graph.
 
-plot_hanoi.py
+`plot_hanoi.py`
 Python script using matplotlib to generate the graph.
 
-towerofhanoi_graph.png
+`towerofhanoi_graph.png`
 Graph showing Number of Disks vs Execution Time.
+
 ## How to Run
 1. Compile the C++ program.
 2. Run the program to generate output files.

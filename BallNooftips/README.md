@@ -47,4 +47,3 @@ This means execution time increases linearly with the number of iterations.
 
 ## Output
 The output includes a table of results and a graph showing execution time versus input size(random velocity generated).
-

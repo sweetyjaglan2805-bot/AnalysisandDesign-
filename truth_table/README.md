@@ -29,7 +29,7 @@ This is because the number of recursive calls doubles with every increase in `n`
 
 ## Files in this Folder
 
-- `truth_table.cpp`  
+- `truthtable.cpp`  
   C++ program to generate truth table and measure execution time.
 
 - `truth_table.txt`  
@@ -45,8 +45,9 @@ This is because the number of recursive calls doubles with every increase in `n`
   Graph showing Input Size (n) vs Execution Time.
 
 ## How to Run
+1. Compile the C++ program.
+2. Run the program to generate output files.
+3. Run the Python script to generate the graph.
 
-### Step 1: Compile and run C++ program
-```bash
-g++ truth_table.cpp -o truth
-./truth
+## Output
+The output includes a table of results and a graph showing execution time versus input size. The graph clearly demonstrates exponential growth in execution time as the input size increases.

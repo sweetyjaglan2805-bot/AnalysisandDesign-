@@ -1,0 +1,10 @@
+InputSize	InputString	Execution Time (ns)
+-----------------------------------------------
+1		A		0
+2		AB		0
+3		ABC		0
+4		ABCD		0
+5		ABCDE		2e+006
+6		ABCDEF		1.1e+007
+7		ABCDEFG		8.3e+007
+8		ABCDEFGH		6.42e+008
