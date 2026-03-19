@@ -1,0 +1,18 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read CSV file
+data = pd.read_csv("kthsmallest_csv.txt")
+
+plt.figure()
+
+plt.plot(data["Size"], data["Time(sec)"], marker='o')
+
+plt.xlabel("Array Size (n)")
+plt.ylabel("Execution Time (seconds)")
+plt.title("Kth smallest Execution Time vs Array Size")
+
+plt.grid(True)
+
+plt.savefig("kthsmallest_graph.png")
+plt.show()
