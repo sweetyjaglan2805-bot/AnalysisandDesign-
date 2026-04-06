@@ -3,11 +3,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
-
 using namespace std;
-
 const double REDUCTION_FACTOR = 0.575;
-// Calculate number of tips
 int calculateTips(double velocity) {
     int tips = 0;
     while (velocity >= 1.0) {
@@ -16,8 +13,6 @@ int calculateTips(double velocity) {
     }
     return tips;
 }
-
-// Measure execution time
 double measureTime(double velocity, int &tips) {
     clock_t start = clock();
     for (int i = 0; i < 100000; i++) {
@@ -26,7 +21,7 @@ double measureTime(double velocity, int &tips) {
     tips = calculateTips(velocity);
     clock_t end = clock();
     double seconds = double(end - start) / CLOCKS_PER_SEC;
-    return seconds * 1000000000.0; // nanoseconds
+    return seconds * 1000000000.0;
 }
 
 int main() {
@@ -43,14 +38,9 @@ int main() {
         double velocity = size;
         int tips;
         double timeTaken = measureTime(velocity, tips);
-
-        // Console output
         cout << "Velocity: " << size << endl;
-        // cout << "Initial Velocity Used: " << generateVelocity() << " m/s" << endl;
         cout << "Total Number of Tips: " << tips << endl;
         cout << "Execution Time: " << fixed << timeTaken << " ns\n"<<endl;
-
-        // File output
         tableFile << velocity << "\t\t\t"
                   << tips << "\t\t"
                   << timeTaken << "\n";
@@ -62,7 +52,5 @@ int main() {
 
     tableFile.close();
     csvFile.close();
-
-    cout << "\nResults saved in ball_table.txt and ball_csv.txt\n";
     return 0;
 }

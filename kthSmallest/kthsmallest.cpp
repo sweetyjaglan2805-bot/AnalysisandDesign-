@@ -71,7 +71,7 @@ int main()
 
     csv << "Size,k,kth Element,Time(sec)\n";
 
-    for (int n = 5; n <= 100; n += 5)
+    for (int n = 5; n <= 1000; n += 5)
     {
         cout << "Array Size = " << n << "\n";
         int arr[n];

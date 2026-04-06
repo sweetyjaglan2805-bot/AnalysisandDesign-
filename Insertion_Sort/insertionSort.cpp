@@ -18,15 +18,11 @@ void insertionSort(int arr[], int n)
         arr[j + 1] = key;
     }
 }
-
-// Copy array
 void copyArray(int src[], int dest[], int n)
 {
     for (int i = 0; i < n; i++)
         dest[i] = src[i];
 }
-
-// Measure time
 double measureTime(int arr[], int n)
 {
     clock_t start = clock();
@@ -54,36 +50,26 @@ int main()
 
     for (int i = 0; i < TESTS; i++)
     {
-        int n = (i + 1) * 500;   // increasing input size
+        int n = (i + 1) * 500;  
         n_values[i] = n;
 
         int arr[MAX];
         int temp[MAX];
-
-        // Generate random array (average case)
         for (int j = 0; j < n; j++)
             arr[j] = rand() % 10000;
-
-        // Average case
         copyArray(arr, temp, n);
         avg_time[i] = measureTime(temp, n);
-
-        // Best case (already sorted)
         insertionSort(arr, n);
         copyArray(arr, temp, n);
         best_time[i] = measureTime(temp, n);
 
-        // Print to console
         cout << n << "\t" << best_time[i] << "\t" << avg_time[i] << endl;
 
-        // Save to files
         txtFile << n << "\t" << best_time[i] << "\t" << avg_time[i] << "\n";
         csvFile << n << "," << best_time[i] << "," << avg_time[i] << "\n";
     }
 
     txtFile.close();
     csvFile.close();
-
-    cout << "\nData saved to insertion_table.txt and insertion_sort.csv\n";
     return 0;
 }
