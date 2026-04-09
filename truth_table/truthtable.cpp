@@ -40,7 +40,6 @@ int main() {
     }
 
     tablefile << "Test No\tInput (n)\tCombinations (2^n)\tExecution Time (ns)\n";
-    tablefile << "-------------------------------------------------------------\n";
     csvFile << "Test,Input,Combinations,Time\n";
     for (int test = 1; test <= 25; test++) {
         int n = test;  

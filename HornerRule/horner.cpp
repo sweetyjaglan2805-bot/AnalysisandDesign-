@@ -55,7 +55,6 @@ int main()
         generateCoefficients(coeff, n);
         x = (rand() % 100) / 10.0;
         time_taken = measureTime(coeff, n, x, result);
-        cout << "\n--------------------------------------\n";
         cout << "Degree of Polynomial: " << n << endl;
         cout << "Generated x: " << x << endl;
 

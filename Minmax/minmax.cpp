@@ -21,15 +21,11 @@ void findminmax(int arr[], int low, int high, int &min, int &max)
     }
     else{
         int mid = (low + high) / 2;
-
         int min1, max1;
-
         findminmax(arr, low, mid, min, max);
         findminmax(arr, mid + 1, high, min1, max1);
-
         if(max < max1)
             max = max1;
-
         if(min > min1)
             min = min1;
     }
@@ -74,6 +70,7 @@ int main()
         txtFile << n << "\t" << time << "\n";
         csvFile << n << "," << time << "\n";
     }
+
     txtFile.close();
     csvFile.close();
     return 0;

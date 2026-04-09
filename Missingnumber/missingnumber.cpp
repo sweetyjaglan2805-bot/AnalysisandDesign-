@@ -81,7 +81,6 @@ int main()
         }
 
         double avgTime = totalTime / 10;
-        // double timeTaken = measureTime(arr, actualSize, foundMissing);
 
         cout << "Missing number: " << foundMissing << endl;
         cout << "Execution time: " << avgTime << " ns"<<endl;

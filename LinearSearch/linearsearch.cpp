@@ -59,7 +59,6 @@ int main() {
             avgTime += measureTime(arr, size, avgTarget, index);
         }
         avgTime /= TRIALS;
-        cout << "\n----------------------------------------\n";
         cout << "Array Size: " << size << endl;
         cout << "Array Elements: ";
         for (int i = 0; i < size; i++)
@@ -68,7 +67,6 @@ int main() {
         cout << "Worst Case Target: " << worstTarget << endl;
         cout << "Worst Time: " << worstTime << " ns\n";
         cout << "Average Time: " << avgTime << " ns\n";
-        cout << "----------------------------------------\n";
         file << left
                   << setw(10) << size
                   << setw(15) << "Worst"
