@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv("multistage_csv.txt")
+x = data["N"]
+y = data["Time"]
+
+plt.plot(x, y, marker='o')
+plt.xlabel("Number of Vertices")
+plt.ylabel("Execution Time (ns)")
+plt.title("Multistage Graph Performance")
+
+plt.grid(True)
+plt.savefig("multistage_graph.png")
+plt.show()

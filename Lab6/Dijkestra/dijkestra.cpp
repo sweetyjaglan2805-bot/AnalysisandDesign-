@@ -6,72 +6,66 @@
 using namespace std;
 #define MAX 1000
 #define INF INT_MAX
+struct Node {
+    int vertex;
+    int dist;
+};
+
 int cost[MAX][MAX];
 int dist[MAX];
 int visited[MAX];
 int parent[MAX];
-int heapNode[MAX];
-int heapDist[MAX];
+
+Node heap[MAX];
 int heapSize = 0;
-void swap(int &a, int &b)
-{
-    int t = a;
-    a = b;
-    b = t;
-}
-void swapHeap(int i, int j)
-{
-    swap(heapNode[i], heapNode[j]);
-    swap(heapDist[i], heapDist[j]);
-}
-void insertHeap(int node, int d)
-{
+void insertHeap(int v, int d) {
     heapSize++;
-    heapNode[heapSize] = node;
-    heapDist[heapSize] = d;
+    heap[heapSize].vertex = v;
+    heap[heapSize].dist = d;
     int i = heapSize;
-    while (i > 1 && heapDist[i] < heapDist[i / 2])
-    {
-        swapHeap(i, i / 2);
+    while (i > 1 && heap[i].dist < heap[i/2].dist) {
+        swap(heap[i], heap[i/2]);
         i /= 2;
     }
 }
-int deleteMin()
-{
-    int node = heapNode[1];
-    heapNode[1] = heapNode[heapSize];
-    heapDist[1] = heapDist[heapSize];
+Node deleteMin() {
+    Node minNode = heap[1];
+    heap[1] = heap[heapSize];
     heapSize--;
     int i = 1;
-    while (2 * i <= heapSize)
-    {
+    while (2 * i <= heapSize) {
         int child = 2 * i;
-        if (child + 1 <= heapSize && heapDist[child + 1] < heapDist[child])
+        if (child + 1 <= heapSize && heap[child + 1].dist < heap[child].dist)
             child++;
-        if (heapDist[i] > heapDist[child])
-        {
-            swapHeap(i, child);
+        if (heap[i].dist > heap[child].dist) {
+            swap(heap[i], heap[child]);
             i = child;
-        }
-        else
-            break;
+        } else break;
     }
-    return node;
+    return minNode;
 }
 bool isEmpty()
 {
     return heapSize == 0;
 }
-void printPath(int v)
-{
-    if (v == -1) return;
-    printPath(parent[v]);
-    cout << v << " ";
+void printPath(int v) {
+    int path[MAX];
+    int k = 0;
+
+    while (v != -1) {
+        path[k++] = v;
+        v = parent[v];
+    }
+
+    for (int i = k - 1; i >= 0; i--) {
+        cout << path[i];
+        if (i != 0)
+            cout << " -> ";
+    }
 }
 int Dijkstra(int n, int source)
 {
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         dist[i] = INF;
         visited[i] = 0;
         parent[i] = -1;
@@ -81,7 +75,9 @@ int Dijkstra(int n, int source)
     insertHeap(source, 0);
     while (!isEmpty())
     {
-        int u = deleteMin();
+         Node temp = deleteMin();
+        int u = temp.vertex;
+
         if (visited[u]) continue;
         visited[u] = 1;
         for (int v = 0; v < n; v++)
@@ -91,7 +87,7 @@ int Dijkstra(int n, int source)
                 if (dist[v] > dist[u] + cost[u][v])
                 {
                     dist[v] = dist[u] + cost[u][v];
-                    parent[v] = u;   // 🔥 track path
+                    parent[v] = u;   
                     insertHeap(v, dist[v]);
                 }
             }
@@ -105,28 +101,22 @@ int Dijkstra(int n, int source)
 }
 void generateGraph(int n)
 {
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++){
             if (i == j)
                 cost[i][j] = 0;
             else
                 cost[i][j] = INF;
         }
     }
-    for (int i = 0; i < n - 1; i++)
-    {
+    for (int i = 0; i < n - 1; i++){
         int w = rand() % 10 + 1;
         cost[i][i + 1] = w;
         cost[i + 1][i] = w;
     }
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = i + 2; j < n; j++)
-        {
-            if (rand() % 2)
-            {
+    for (int i = 0; i < n; i++){
+        for (int j = i + 2; j < n; j++){
+            if (rand() % 2){
                 int w = rand() % 20 + 1;
                 cost[i][j] = w;
                 cost[j][i] = w;
@@ -152,7 +142,7 @@ int main()
     ofstream csvFile("dijkestra_csv.txt");
     txtFile << "Vertices\tDistance\tTime(ns)\n";
     csvFile << "Vertices,Time\n";
-    for (int n = 10; n <= 500; n += 10)
+    for (int n = 10; n <= 400; n += 10)
     {
         cout << "\nVertices: " << n << endl;
         generateGraph(n);
