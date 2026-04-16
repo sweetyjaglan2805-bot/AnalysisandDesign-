@@ -20,4 +20,3 @@ plt.text(x.max()*0.6, max(time)*0.8, "Time Complexity: O(log n)", fontsize=12)
 plt.savefig("binary_search_graph.png")
 plt.show()
 
-
