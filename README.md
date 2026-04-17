@@ -35,7 +35,7 @@ Truth Table
 * Prim’s Algorithm
 * Kruskal’s Algorithm
 
-###  Lab 7 – Graph Algorithms
+###  Lab 7 – Other Algorithms
 
 * Cycle Detection
 * Multistage Graph
