@@ -1,17 +1,19 @@
 # Analysis and Desigm of Algorithms (ADA) Lab
 This repository contains implementations of various algorithms organized lab-wise. Each lab focuses on a specific category of algorithms along with performance analysis. 
+
 ## Repository Structure
-### 🔹 Lab 1 – Basic Algorithms
-BallNooftips
-First Duplicate
-Horner Rule
-Linear Search
-Missing Number
-Permutation
-Power
-Sum of Array
-Tower of Hanoi
-Truth Table
+
+###  Lab 1 – Basic Algorithms
+* BallNooftips
+* First Duplicate
+* Horner Rule
+* Linear Search
+* Missing Number
+* Permutation
+* Power
+* Sum of Array
+* Tower of Hanoi
+* Truth Table
 
 ###  Lab 2 – Searching & Sorting
 * Binary Search
@@ -42,6 +44,10 @@ Truth Table
 
 ###  Lab 8 – Dynamic Programming
 * Matrix Chain Multiplication
+
+###  Lab 9 – Dynamic Programming
+* Floyd Warshall
+* LCS
 
 ##  Common Files in Each Lab
 
