@@ -9,14 +9,14 @@ ADA-Lab/
 │
 ├── README.md
 │
-├── [Lab 1](./Lab1)   → Basic Algorithms  
-├── [Lab 2](./Lab2)   → Searching & Sorting  
-├── [Lab 3](./Lab3)   → Quick Sort Concepts  
-├── [Lab 4](./lab4)   → Divide & Conquer  
-├── [Lab 5](./Lab5)   → Greedy Algorithms  
-├── [Lab 6](./Lab6)   → Graph Algorithms  
-├── [Lab 7](./Lab7)   → Shortest Path Problems  
-├── [Lab 8](./lab8)   → Dynamic Programming  
+├── [Lab 1](./Lab%201)   → Basic Algorithms  
+├── [Lab 2](./Lab%202)   → Searching & Sorting  
+├── [Lab 3](./Lab%203)   → Quick Sort Concepts  
+├── [Lab 4](./lab%204)   → Divide & Conquer  
+├── [Lab 5](./Lab%205)   → Greedy Algorithms  
+├── [Lab 6](./Lab%206)   → Graph Algorithms  
+├── [Lab 7](./Lab%207)   → Shortest Path Problems  
+├── [Lab 8](./lab5208)   → Dynamic Programming  
 ├── [Lab9](./Lab9)   → Advanced DP  
 ├── [Lab10](./Lab10)  → Optimization Problems  
 ├── [Lab11](./Lab11)  → Backtracking  
