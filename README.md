@@ -3,77 +3,123 @@ This repository contains implementations of various algorithms organized lab-wis
 
 ## Repository Structure
 
-###  Lab 1 – Basic Algorithms
-* BallNooftips
-* First Duplicate
-* Horner Rule
-* Linear Search
-* Missing Number
-* Permutation
-* Power
-* Sum of Array
-* Tower of Hanoi
-* Truth Table
+The repository is organized into folders for each lab:
 
-###  Lab 2 – Searching & Sorting
-* Binary Search
-* Insertion Sort
+ADA-Lab/
+│
+├── README.md
+│
+├── [Lab 1](./Lab 1)   → Basic Algorithms  
+├── [Lab 2](./Lab 2)   → Searching & Sorting  
+├── [Lab 3](./Lab 3)   → Quick Sort Concepts  
+├── [lab 4](./lab 4)   → Divide & Conquer  
+├── [Lab 5](./Lab 5)   → Greedy Algorithms  
+├── [Lab 6](./Lab6)   → Graph Algorithms  
+├── [Lab 7](./Lab 7)   → Shortest Path Problems  
+├── [lab 8](./lab 8)   → Dynamic Programming  
+├── [Lab9](./Lab9)   → Advanced DP  
+├── [Lab10](./Lab10)  → Optimization Problems  
+├── [Lab11](./Lab11)  → Backtracking  
 
-###  Lab 3 – Divide and Conquer
-* Merge Sort
-* Quick Sort
-
-###  Lab 4 – Selection Problems
-* Kth Smallest Element
-* Min-Max Algorithm
-
-###  Lab 5 – Other Algorithms
-* Convex Hull
-* Knapsack Problem
-* Strassen Matrix Multiplication
-
-###  Lab 6 – Greedy Algorithms
-* Dijkstra’s Algorithm
-* Prim’s Algorithm
-* Kruskal’s Algorithm
-
-###  Lab 7 – Other Algorithms
-
-* Cycle Detection
-* Multistage Graph
-
-###  Lab 8 – Dynamic Programming
-* Matrix Chain Multiplication
-
-###  Lab 9 – Dynamic Programming
-* Floyd Warshall
-* LCS
-
-##  Common Files in Each Lab
-
-Each lab folder follows a consistent structure:
-
-* `*.cpp` → Implementation of the algorithm
-* `*_table.txt` → Tabular output data
-* `*_csv.txt / *.csv` → Data used for plotting graphs
-* `*_graph.png` → Performance graph
-* `plot_*.py` → Python script for plotting graphs
-
-## Features
-* Implemented in **C++**
-* Covers major ADA paradigms:
-  * Recursion
-  * Divide & Conquer
-  * Greedy Algorithms
-  * Dynamic Programming
-  * Graph Algorithms
-* Execution time analysis (nanoseconds)
-* File handling for storing results
-* Graph plotting using Python
+Each folder contains corresponding `.cpp` programs.
 
 ---
 
-## 🛠️ Technologies Used
+###  Lab 1 – Basic Algorithms
+
+Programs:
+- BallNooftips
+- First Duplicate
+- Horner Rule
+- Linear Search
+- Missing Number
+- Permutation
+- Power(Iterative and Recursive)
+- Sum of Array(Iterative and Recursive)
+- Tower of Hanoi
+- Truth Table
+
+###  Lab 2 – Searching & Sorting
+
+Programs:
+- Binary Search
+- Insertion Sort
+
+###  Lab 3 – Divide and Conquer
+
+Programs:
+- Merge Sort
+- Quick Sort
+
+###  Lab 4 – Selection Problems
+
+Programs:
+- Kth Smallest Element
+- Min-Max Algorithm
+
+###  Lab 5 – Other Algorithms
+
+Programs:
+- Convex Hull
+- Knapsack Problem
+- Strassen Matrix Multiplication
+
+###  Lab 6 – Greedy Algorithms
+
+Programs:
+- Dijkstra’s Algorithm
+- Prim’s Algorithm
+- Kruskal’s Algorithm
+
+###  Lab 7 – Other Algorithms(Also Dynamic Programming)
+
+Programs:
+- Cycle Detection
+- Multistage Graph (Stage Calculation, Forward Approach, Backward Approach)
+
+###  Lab 8 – Dynamic Programming
+
+Programs:
+- Matrix Chain Multiplication
+
+###  Lab 9 – Dynamic Programming
+
+Programs:
+- Floyd Warshall
+- LCS
+
+###  Lab 10: Optimization Problems
+
+Programs:
+- 0/1 Knapsack  
+- Travelling Salesman Problem (TSP) 
+
+###  Lab 11: Backtracking Algorithms
+
+Programs:
+- Graph Coloring  
+- N-Queens Problem  
+- Subset Sum Problem  
+- Hamiltonian Cycle  
+
+
+
+## Features
+- Implemented in **C++**
+- Covers major ADA paradigms:
+  - Recursion
+  - Divide & Conquer
+  - Greedy Algorithms
+  - Dynamic Programming
+  - Graph Algorithms
+  - Backtracking
+- Execution time analysis (nanoseconds)(for codes except Backtracking)
+- File handling for storing results(for codes except Backtracking)
+- Graph plotting using Python (for some sorting Algorithms)
+
+---
+
+## Technologies Used
 
 * **C++** → Algorithm implementation
 * **Python (Matplotlib)** → Graph plotting
@@ -81,40 +127,11 @@ Each lab folder follows a consistent structure:
 
 ---
 
-##  How to Run
-
-1. Clone the repository:
-
-   ```bash
-   git clone <your-repo-link>
-   ```
-
-2. Navigate to any lab folder:
-
-   ```bash
-   cd Lab\ 8/Matrixchain
-   ```
-
-3. Compile the code:
-
-   ```bash
-   g++ filename.cpp -o output
-   ```
-
-4. Run the program:
-
-   ```bash
-   ./output
-   ```
-
----
-
 ##  Purpose
 
-* To understand and implement DAA concepts
-* To analyze time complexity practically
-* To generate data for performance graphs
-* To prepare for exams and viva
+- To understand and implement ADA concepts
+- To analyze time complexity practically
+- To generate data for performance graphs
 
 ---
 
