@@ -12,11 +12,11 @@ ADA-Lab/
 ├── [Lab 1](./Lab1)   → Basic Algorithms  
 ├── [Lab 2](./Lab2)   → Searching & Sorting  
 ├── [Lab 3](./Lab3)   → Quick Sort Concepts  
-├── [lab 4](./lab4)   → Divide & Conquer  
+├── [Lab 4](./lab4)   → Divide & Conquer  
 ├── [Lab 5](./Lab5)   → Greedy Algorithms  
 ├── [Lab 6](./Lab6)   → Graph Algorithms  
 ├── [Lab 7](./Lab7)   → Shortest Path Problems  
-├── [lab 8](./lab8)   → Dynamic Programming  
+├── [Lab 8](./lab8)   → Dynamic Programming  
 ├── [Lab9](./Lab9)   → Advanced DP  
 ├── [Lab10](./Lab10)  → Optimization Problems  
 ├── [Lab11](./Lab11)  → Backtracking  
