@@ -49,7 +49,6 @@ int main() {
                 << tips << ","
                 << timeTaken << "\n";
     }
-
     tableFile.close();
     csvFile.close();
     return 0;
